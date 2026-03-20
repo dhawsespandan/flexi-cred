@@ -1,5 +1,4 @@
-// Navbar.jsx
-import { useContext } from "react"           // ✅ added
+import { useContext } from "react"
 import { AuthContext } from '../auth/authContext'
 
 function Navbar(){

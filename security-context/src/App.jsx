@@ -1,18 +1,17 @@
-// App.jsx
-import { useContext } from 'react'           // ✅ added
+import { useContext } from 'react'
 import './App.css'
 import { AuthContext } from './auth/authContext'
 import Navbar from './components/NavBar'
 import Profile from './components/Profile'
-import Login from './components/Login'       // ✅ added
+import Login from './components/Login'
 
 function App(){
   const {user} = useContext(AuthContext)
   return(
     <div>
-      <Navbar/>                              {/* ✅ Navbar is self-closing */}
+      <Navbar/>
       <hr/>
-      {user ? <Profile/> : <Login/>}        {/* ✅ moved outside Navbar */}
+      {user ? <Profile/> : <Login/>}
     </div>
   )
 }
